@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "b2236ac4-cdcf-464c-8dcb-f19bd58fe09c",
+		"name": "OnyxDeliveryService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7183372"
+	},
+	"item": [
+		{
+			"name": "CheckDeliveryLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Value\": {\r\n        \"P_LANG_NO\": \"1\",\r\n        \"P_DLVRY_NO\": \"1010\",\r\n        \"P_PSSWRD\": \"1\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mapp.yemensoft.net/OnyxDeliveryService/Service.svc/CheckDeliveryLogin",
+					"protocol": "http",
+					"host": [
+						"mapp",
+						"yemensoft",
+						"net"
+					],
+					"path": [
+						"OnyxDeliveryService",
+						"Service.svc",
+						"CheckDeliveryLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDeliveryBillsItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Value\": {\r\n        \"P_DLVRY_NO\": \"1010\",\r\n        \"P_LANG_NO\": \"1\",\r\n        \"P_BILL_SRL\": \"\",\r\n        \"P_PRCSSD_FLG\": \"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mapp.yemensoft.net/OnyxDeliveryService/Service.svc/GetDeliveryBillsItems",
+					"protocol": "http",
+					"host": [
+						"mapp",
+						"yemensoft",
+						"net"
+					],
+					"path": [
+						"OnyxDeliveryService",
+						"Service.svc",
+						"GetDeliveryBillsItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDeliveryStatusTypes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Value\": {\r\n        \"P_LANG_NO\": \"1\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mapp.yemensoft.net/OnyxDeliveryService/Service.svc/GetDeliveryStatusTypes",
+					"protocol": "http",
+					"host": [
+						"mapp",
+						"yemensoft",
+						"net"
+					],
+					"path": [
+						"OnyxDeliveryService",
+						"Service.svc",
+						"GetDeliveryStatusTypes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
